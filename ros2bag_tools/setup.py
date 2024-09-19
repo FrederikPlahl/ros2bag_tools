@@ -69,6 +69,7 @@ The package provides the additional commands for the ROS 2 bag command line tool
             'pcd = ros2bag_tools.exporter.pcd:PcdExporter',
             'labels = ros2bag_tools.exporter.labels:LabelsExporter',
             'joint_states = ros2bag_tools.exporter.joint_states:JointStatesExporter',
+            'world_to_link = ros2bag_tools.exporter.world_to_link:WorldToLinkExporter',
         ],
     }
 )
