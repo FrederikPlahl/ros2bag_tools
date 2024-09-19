@@ -3,7 +3,7 @@ from pathlib import Path
 from ros2bag_tools.exporter import Exporter
 
 class JointStatesExporter(Exporter):
-    """Centroid .json files per scene_update message."""
+    """Joint State .json files per joint_states message."""
 
     def __init__(self):
         self._dir = None
