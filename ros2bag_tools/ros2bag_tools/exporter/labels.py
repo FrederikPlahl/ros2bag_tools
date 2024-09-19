@@ -72,7 +72,7 @@ class LabelsExporter(Exporter):
             # write the objects
             for i, entity in enumerate(entities):
                 label_id = entity.id
-                if entity.cubes!=None:
+                if entity.cubes != []:
                     for cube in entity.cubes:
                         f.write('        {\n')
                         f.write(f'            "name": "{label_id}",\n')
@@ -96,7 +96,8 @@ class LabelsExporter(Exporter):
                             f.write('        }\n')
                         else:
                             f.write('        },\n')
-                if entity.cylinders!=None:
+                if entity.cylinders != []:
+                    print(f'cylinders {entity.cylinders}')
                     print('You are using cylinders as bounding boxes. Consider using cubes instead.')
                     for cylinder in entity.cylinders:
                         f.write('        {\n')
