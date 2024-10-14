@@ -50,4 +50,5 @@ class WorldToLinkExporter(Exporter):
                 f.write(f'            "w": {transform.transform.rotation.w}\n')
                 f.write('        }\n')
                 f.write('    }\n')
+                f.write('}\n')
             self.written_once = True
