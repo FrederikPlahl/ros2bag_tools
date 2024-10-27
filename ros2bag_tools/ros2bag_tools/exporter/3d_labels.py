@@ -26,7 +26,7 @@ def euler_from_quaternion(x, y, z, w):
      
         return math.degrees(roll_x), math.degrees(pitch_y), math.degrees(yaw_z) # in degrees
 
-class LabelsExporter(Exporter):
+class Labels3DExporter(Exporter):
     """Centroid .json files per scene_update message."""
 
     def __init__(self):
