@@ -67,9 +67,10 @@ The package provides the additional commands for the ROS 2 bag command line tool
             'image = ros2bag_tools.exporter.image:ImageExporter',
             'stamp = ros2bag_tools.exporter.stamp:StampExporter',
             'pcd = ros2bag_tools.exporter.pcd:PcdExporter',
-            'labels = ros2bag_tools.exporter.labels:LabelsExporter',
+            '3d_labels = ros2bag_tools.exporter.3d_labels:Labels3DExporter',
             'joint_states = ros2bag_tools.exporter.joint_states:JointStatesExporter',
             'world_to_link = ros2bag_tools.exporter.world_to_link:WorldToLinkExporter',
+            '2d_labels = ros2bag_tools.exporter.2d_labels:Labels2DExporter',
         ],
     }
 )
